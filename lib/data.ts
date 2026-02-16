@@ -113,26 +113,24 @@ export const projectsData: Project[] = [
   },
   {
     id: "proj-3",
-    title: "PT. Daya Prana Raya - Company Profile",
+    title: "KariesNoMore - Dental Care Education App",
     description:
-      "Website company profile modern dengan admin dashboard untuk mengelola portfolio project konstruksi dan building maintenance.",
+      "Aplikasi pendidikan kesehatan gigi fullstack Android dengan Flutter/Dart untuk mencegah karies gigi melalui edukasi dan reminder perawatan.",
     longDescription:
-      "Website company profile lengkap untuk PT. Daya Prana Raya yang dibangun dengan Next.js 15 dan Supabase. Fitur utama meliputi homepage modern, project portfolio dengan filtering dan sorting, project detail dengan image gallery interaktif, admin dashboard untuk CRUD operations, multi-image upload dengan drag & drop support, responsive design, dan SEO optimized. Menggunakan shadcn/ui components untuk UI yang modern dan konsisten.",
-    image: "/projects/project3-company.jpg",
+      "KariesNoMore adalah aplikasi mobile Android yang dibangun dengan Flutter dan Dart di Android Studio. Aplikasi ini menyediakan fitur lengkap untuk edukasi kesehatan gigi termasuk timer sikat gigi interaktif, video edukasi tentang perawatan gigi, tips mencegah karies, kalender reminder perawatan gigi, dan FAQ dengan tanya jawab seputar kesehatan gigi. Dirancang untuk membantu pengguna menjaga kesehatan gigi dengan cara yang menyenangkan dan edukatif.",
+    image: "/projects/project3-karies.jpg",
     technologies: [
-      "Next.js",
-      "TypeScript",
-      "Supabase",
-      "PostgreSQL",
-      "Tailwind CSS",
-      "shadcn/ui",
+      "Flutter",
+      "Dart",
+      "Android Studio",
+      "Firebase",
     ],
-    category: "Web Application",
+    category: "Mobile Application",
     featured: true,
     links: {
-      github: "https://github.com/lintangrafi/dpr-profile",
+      github: "https://github.com/lintangrafi",
     },
-    date: "2025-11",
+    date: "2025-03",
   },
   {
     id: "proj-4",
@@ -148,14 +146,38 @@ export const projectsData: Project[] = [
       "shadcn/ui",
     ],
     category: "Web Application",
-    featured: false,
+    featured: true,
     links: {
       github: "https://github.com/lintangrafi/nusuki-app",
+      demo: "https://nusukimegautama.my.id",
     },
     date: "2025-11",
   },
   {
     id: "proj-5",
+    title: "PT. Daya Prana Raya - Company Profile",
+    description:
+      "Website company profile modern dengan admin dashboard untuk mengelola portfolio project konstruksi dan building maintenance.",
+    longDescription:
+      "Website company profile lengkap untuk PT. Daya Prana Raya yang dibangun dengan Next.js 15 dan Supabase. Fitur utama meliputi homepage modern, project portfolio dengan filtering dan sorting, project detail dengan image gallery interaktif, admin dashboard untuk CRUD operations, multi-image upload dengan drag & drop support, responsive design, dan SEO optimized. Menggunakan shadcn/ui components untuk UI yang modern dan konsisten.",
+    image: "/projects/project5-company.jpg",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "shadcn/ui",
+    ],
+    category: "Web Application",
+    featured: false,
+    links: {
+      github: "https://github.com/lintangrafi/dpr-profile",
+    },
+    date: "2025-11",
+  },
+  {
+    id: "proj-6",
     title: "PAGUMA Calendar - Program Management",
     description:
       "Aplikasi kalender interaktif berbasis Canvas API untuk mengelola program kerja PAGUMA Lebak dengan dukungan multi-departemen dan Firebase real-time.",
@@ -175,7 +197,7 @@ export const projectsData: Project[] = [
     date: "2025-09",
   },
   {
-    id: "proj-6",
+    id: "proj-7",
     title: "LevelUp Lab - Skill Acquisition App",
     description:
       "Aplikasi mobile Flutter untuk pembelajaran skill menggunakan metode 'First 20 Hours' dengan Pomodoro technique untuk focus sessions.",
