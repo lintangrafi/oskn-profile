@@ -167,6 +167,66 @@ export default function Projects() {
             </div>
           </motion.div>
         )}
+
+        {/* Featured Project 4 */}
+        {featuredProjects[3] && (
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="group relative overflow-hidden rounded-2xl bg-gray-900 border border-gray-800 hover:border-gray-700 transition-all duration-300 md:col-span-1"
+          >
+            <div className="relative h-48 overflow-hidden bg-gray-800">
+              <div className="w-full h-full flex items-center justify-center text-gray-600">
+                <span className="text-5xl font-bold opacity-20">
+                  {featuredProjects[3].title.charAt(0)}
+                </span>
+              </div>
+            </div>
+
+            <div className="p-6">
+              <h3 className="text-xl font-bold mb-2">{featuredProjects[3].title}</h3>
+              <p className="text-gray-400 text-sm mb-4">{featuredProjects[3].description}</p>
+
+              <div className="flex flex-wrap gap-2 mb-4">
+                {featuredProjects[3].technologies.slice(0, 3).map((tech) => (
+                  <span
+                    key={tech}
+                    className="text-xs px-2 py-1 rounded-full bg-gray-800 text-gray-300 border border-gray-700"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex gap-4">
+                {featuredProjects[3].links.demo && (
+                  <a
+                    href={featuredProjects[3].links.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm text-gray-300 hover:text-white transition-colors"
+                  >
+                    <FiExternalLink size={16} />
+                    Demo
+                  </a>
+                )}
+                {featuredProjects[3].links.github && (
+                  <a
+                    href={featuredProjects[3].links.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm text-gray-300 hover:text-white transition-colors"
+                  >
+                    <FiGithub size={16} />
+                    Code
+                  </a>
+                )}
+              </div>
+            </div>
+          </motion.div>
+        )}
       </div>
 
       {/* Other Projects - Compact Grid */}
