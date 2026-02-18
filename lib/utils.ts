@@ -58,24 +58,19 @@ export function scrollToSection(sectionId: string) {
   }
 }
 
-export function debounce<T extends (...args: any[]) => any>(
+export function debounce<T extends (...args: unknown[]) => void>(
   func: T,
-  wait: number
+  limit: number
 ): (...args: Parameters<T>) => void {
-  let timeout: NodeJS.Timeout | null = null;
+  let inDebounce: boolean;
   
   return function executedFunction(...args: Parameters<T>) {
-    const later = () => {
-      timeout = null;
-      func(...args);
-    };
-    
-    if (timeout) clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
+    clearTimeout(inDebounce as unknown as NodeJS.Timeout);
+    inDebounce = setTimeout(() => func(...args), limit) as unknown as boolean;
   };
 }
 
-export function throttle<T extends (...args: any[]) => any>(
+export function throttle<T extends (...args: unknown[]) => unknown>(
   func: T,
   limit: number
 ): (...args: Parameters<T>) => void {

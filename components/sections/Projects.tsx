@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { projectsData } from "@/lib/data";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
-import Image from "next/image";
 
 export default function Projects() {
   const featuredProjects = projectsData.filter((p) => p.featured);

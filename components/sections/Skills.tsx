@@ -28,9 +28,10 @@ import {
   SiUnity,
   SiBlender,
 } from "react-icons/si";
-import { VscCode } from "react-icons/vsc";
+import { IconType } from "react-icons"; 
+import { VscCode } from "react-icons/vsc"; // Importing VscCode for VS Code icon
 
-const iconMap: Record<string, any> = {
+const iconMap: Record<string, IconType> = { // Using IconType for better type definition
   React: SiReact,
   "Next.js": SiNextdotjs,
   TypeScript: SiTypescript,
@@ -114,7 +115,7 @@ export default function Skills() {
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                 {skills.map((skill, index) => {
-                  const Icon = iconMap[skill.name];
+                  const Icon = iconMap[skill.name] as IconType | undefined;
 
                   return (
                     <motion.div

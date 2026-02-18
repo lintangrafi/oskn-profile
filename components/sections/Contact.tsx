@@ -110,11 +110,11 @@ export default function Contact() {
           </div>
 
           <div className="p-6 bg-gray-900 rounded-xl border border-gray-800">
-            <p className="text-gray-300">
-              I'm always interested in hearing about new projects and
-              opportunities. Whether you have a question or just want to say hi,
-              I'll try my best to get back to you!
-            </p>
+              <p className="text-gray-300">
+                I&apos;m always interested in hearing about new projects and
+                opportunities. Whether you have a question or just want to say hi,
+                I&apos;ll try my best to get back to you!
+              </p>
           </div>
         </motion.div>
 
@@ -179,7 +179,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg focus:outline-none focus:border-white transition-colors text-white"
-                placeholder="What's this about?"
+                placeholder="What&apos;s this about?"
               />
             </div>
 
@@ -201,6 +201,7 @@ export default function Contact() {
                 placeholder="Your message..."
               />
             </div>
+
 
             <motion.button
               type="submit"
@@ -225,7 +226,7 @@ export default function Contact() {
                 animate={{ opacity: 1, y: 0 }}
                 className="p-4 bg-green-900/20 border border-green-800 rounded-lg text-green-300 text-sm text-center"
               >
-                Message sent successfully! I'll get back to you soon.
+                Message sent successfully! I&apos;ll get back to you soon.
               </motion.div>
             )}
 
